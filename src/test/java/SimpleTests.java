@@ -10,6 +10,6 @@ public class SimpleTests {
 
     @Test
     void negativeTest() {
-        assertThat(true).isEqualTo(true);
+        assertThat(true).isEqualTo(false);
     }
 }

@@ -7,4 +7,9 @@ public class SimpleTests {
     void firstTest() {
         assertEquals(true, true);
     }
+
+    @Test
+    void negativeTest() {
+        assertEquals(true, false);
+    }
 }

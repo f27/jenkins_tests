@@ -9,7 +9,8 @@ repositories {
 
 def junitVersion = "5.7.1",
     allureVersion = "2.13.8",
-    assertjVersion = "3.19.0"
+    assertjVersion = "3.19.0",
+    selenideVersion = "5.20.1"
 
 allure {
     autoconfigure = true
@@ -23,8 +24,9 @@ allure {
 }
 
 dependencies {
-    testImplementation "org.assertj:assertj-core:$assertjVersion"
+    testImplementation "com.codeborne:selenide:$selenideVersion"
     testImplementation "io.qameta.allure:allure-selenide:$allureVersion"
+    testImplementation "org.assertj:assertj-core:$assertjVersion"
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
 }

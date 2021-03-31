@@ -1,10 +1,12 @@
+package tests;
+
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class SimpleTests {
     @Test
-    void firstTest() {
+    void successTest() {
        assertThat(true).isEqualTo(true);
     }
 
@@ -12,4 +14,6 @@ public class SimpleTests {
     void negativeTest() {
         assertThat(false).isEqualTo(true);
     }
+
+
 }

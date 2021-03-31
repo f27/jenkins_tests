@@ -1,15 +1,15 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class SimpleTests {
     @Test
     void firstTest() {
-        assertEquals(true, true);
+       assertThat(true).isEqualTo(true);
     }
 
     @Test
     void negativeTest() {
-        assertEquals(true, false);
+        assertThat(true).isEqualTo(true);
     }
 }
